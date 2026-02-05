@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000100 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000010 /* ContentView.swift */; };
+		A00000000000000000000101 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000011 /* GameView.swift */; };
+		A00000000000000000000102 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000012 /* GameViewModel.swift */; };
+		A00000000000000000000103 /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000013 /* GameRules.swift */; };
+		A00000000000000000000104 /* GameLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000014 /* GameLoop.swift */; };
+		A00000000000000000000105 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000015 /* Models.swift */; };
+		A00000000000000000000106 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000016 /* SettingsStore.swift */; };
+		A00000000000000000000107 /* KeyCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000017 /* KeyCaptureView.swift */; };
+		A00000000000000000000108 /* SnakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000018 /* SnakeApp.swift */; };
+		A00000000000000000000109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000019 /* Assets.xcassets */; };
+
+		A00000000000000000000200 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000010 /* ContentView.swift */; };
+		A00000000000000000000201 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000011 /* GameView.swift */; };
+		A00000000000000000000202 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000012 /* GameViewModel.swift */; };
+		A00000000000000000000203 /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000013 /* GameRules.swift */; };
+		A00000000000000000000204 /* GameLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000014 /* GameLoop.swift */; };
+		A00000000000000000000205 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000015 /* Models.swift */; };
+		A00000000000000000000206 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000016 /* SettingsStore.swift */; };
+		A00000000000000000000207 /* KeyCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000017 /* KeyCaptureView.swift */; };
+		A00000000000000000000208 /* SnakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000018 /* SnakeApp.swift */; };
+		A00000000000000000000209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000019 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000010 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A00000000000000000000011 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A00000000000000000000012 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		A00000000000000000000013 /* GameRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRules.swift; sourceTree = "<group>"; };
+		A00000000000000000000014 /* GameLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLoop.swift; sourceTree = "<group>"; };
+		A00000000000000000000015 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A00000000000000000000016 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		A00000000000000000000017 /* KeyCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCaptureView.swift; sourceTree = "<group>"; };
+		A00000000000000000000018 /* SnakeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0000000000000000000001A /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		A0000000000000000000001B /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+
+		A00000000000000000000020 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000021 /* SnakeMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = SnakeMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000003 /* Snake */,
+				A00000000000000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000020 /* Snake.app */,
+				A00000000000000000000021 /* SnakeMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000003 /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000018 /* SnakeApp.swift */,
+				A00000000000000000000010 /* ContentView.swift */,
+				A00000000000000000000011 /* GameView.swift */,
+				A00000000000000000000012 /* GameViewModel.swift */,
+				A00000000000000000000013 /* GameRules.swift */,
+				A00000000000000000000014 /* GameLoop.swift */,
+				A00000000000000000000015 /* Models.swift */,
+				A00000000000000000000016 /* SettingsStore.swift */,
+				A00000000000000000000017 /* KeyCaptureView.swift */,
+				A00000000000000000000019 /* Assets.xcassets */,
+				A0000000000000000000001A /* Info-iOS.plist */,
+				A0000000000000000000001B /* Info-macOS.plist */,
+			);
+			path = Snake;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000300 /* Snake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000610 /* Build configuration list for PBXNativeTarget "Snake" */;
+			buildPhases = (
+				A00000000000000000000400 /* Sources */,
+				A00000000000000000000401 /* Resources */,
+				A00000000000000000000402 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snake;
+			productName = Snake;
+			productReference = A00000000000000000000020 /* Snake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000301 /* SnakeMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000620 /* Build configuration list for PBXNativeTarget "SnakeMac" */;
+			buildPhases = (
+				A00000000000000000000410 /* Sources */,
+				A00000000000000000000411 /* Resources */,
+				A00000000000000000000412 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnakeMac;
+			productName = SnakeMac;
+			productReference = A00000000000000000000021 /* SnakeMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+			};
+			buildConfigurationList = A00000000000000000000600 /* Build configuration list for PBXProject "Snake" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			mainGroup = A00000000000000000000001;
+			productRefGroup = A00000000000000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000300 /* Snake */,
+				A00000000000000000000301 /* SnakeMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000109 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000209 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000400 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000108 /* SnakeApp.swift in Sources */,
+				A00000000000000000000100 /* ContentView.swift in Sources */,
+				A00000000000000000000101 /* GameView.swift in Sources */,
+				A00000000000000000000102 /* GameViewModel.swift in Sources */,
+				A00000000000000000000103 /* GameRules.swift in Sources */,
+				A00000000000000000000104 /* GameLoop.swift in Sources */,
+				A00000000000000000000105 /* Models.swift in Sources */,
+				A00000000000000000000106 /* SettingsStore.swift in Sources */,
+				A00000000000000000000107 /* KeyCaptureView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000208 /* SnakeApp.swift in Sources */,
+				A00000000000000000000200 /* ContentView.swift in Sources */,
+				A00000000000000000000201 /* GameView.swift in Sources */,
+				A00000000000000000000202 /* GameViewModel.swift in Sources */,
+				A00000000000000000000203 /* GameRules.swift in Sources */,
+				A00000000000000000000204 /* GameLoop.swift in Sources */,
+				A00000000000000000000205 /* Models.swift in Sources */,
+				A00000000000000000000206 /* SettingsStore.swift in Sources */,
+				A00000000000000000000207 /* KeyCaptureView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_PREVIEWS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A00000000000000000000501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_PREVIEWS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A00000000000000000000510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Snake/Info-iOS.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Snake;
+				PRODUCT_NAME = Snake;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A00000000000000000000511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Snake/Info-iOS.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Snake;
+				PRODUCT_NAME = Snake;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A00000000000000000000520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Snake/Info-macOS.plist;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SnakeMac;
+				PRODUCT_NAME = SnakeMac;
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		A00000000000000000000521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Snake/Info-macOS.plist;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SnakeMac;
+				PRODUCT_NAME = SnakeMac;
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000600 /* Build configuration list for PBXProject "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000500 /* Debug */,
+				A00000000000000000000501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A00000000000000000000610 /* Build configuration list for PBXNativeTarget "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000510 /* Debug */,
+				A00000000000000000000511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A00000000000000000000620 /* Build configuration list for PBXNativeTarget "SnakeMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000520 /* Debug */,
+				A00000000000000000000521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000000 /* Project object */;
+}

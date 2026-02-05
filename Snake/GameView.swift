@@ -15,6 +15,7 @@ struct GameView: View {
             boardView
         }
         .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     private var headerView: some View {
