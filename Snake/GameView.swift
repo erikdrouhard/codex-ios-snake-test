@@ -120,14 +120,16 @@ struct GameView: View {
 
             overlayView
 
-            #if os(macOS)
+            #if os(macOS) || os(iOS)
             KeyCaptureView { direction in
                 viewModel.handleDirection(direction)
                 if !viewModel.state.isRunning {
                     viewModel.start()
                 }
             }
-            .frame(width: 0, height: 0)
+            .frame(width: 1, height: 1)
+            .allowsHitTesting(false)
+            .accessibilityHidden(true)
             #endif
         }
     }
@@ -151,7 +153,7 @@ struct GameView: View {
             VStack(spacing: 8) {
                 Text("Classic Snake")
                     .font(.title2.bold())
-                Text("Tap or press an arrow key to start")
+                Text("Tap or press an arrow key/WASD to start")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }

@@ -1,5 +1,77 @@
 import SwiftUI
 
+#if os(iOS)
+import UIKit
+
+struct KeyCaptureView: UIViewRepresentable {
+    var onDirection: (Direction) -> Void
+
+    func makeUIView(context: Context) -> KeyView {
+        let view = KeyView()
+        view.onDirection = onDirection
+        DispatchQueue.main.async {
+            view.becomeFirstResponder()
+        }
+        return view
+    }
+
+    func updateUIView(_ uiView: KeyView, context: Context) {
+        uiView.onDirection = onDirection
+        DispatchQueue.main.async {
+            if !uiView.isFirstResponder {
+                uiView.becomeFirstResponder()
+            }
+        }
+    }
+
+    final class KeyView: UIView {
+        var onDirection: ((Direction) -> Void)?
+
+        override var canBecomeFirstResponder: Bool {
+            true
+        }
+
+        override var keyCommands: [UIKeyCommand]? {
+            [
+                UIKeyCommand(input: UIKeyCommand.inputUpArrow, modifierFlags: [], action: #selector(handleKey(_:))),
+                UIKeyCommand(input: UIKeyCommand.inputDownArrow, modifierFlags: [], action: #selector(handleKey(_:))),
+                UIKeyCommand(input: UIKeyCommand.inputLeftArrow, modifierFlags: [], action: #selector(handleKey(_:))),
+                UIKeyCommand(input: UIKeyCommand.inputRightArrow, modifierFlags: [], action: #selector(handleKey(_:))),
+                UIKeyCommand(input: "w", modifierFlags: [], action: #selector(handleKey(_:))),
+                UIKeyCommand(input: "a", modifierFlags: [], action: #selector(handleKey(_:))),
+                UIKeyCommand(input: "s", modifierFlags: [], action: #selector(handleKey(_:))),
+                UIKeyCommand(input: "d", modifierFlags: [], action: #selector(handleKey(_:))),
+            ]
+        }
+
+        @objc private func handleKey(_ command: UIKeyCommand) {
+            guard let direction = mapDirection(for: command) else { return }
+            onDirection?(direction)
+        }
+
+        private func mapDirection(for command: UIKeyCommand) -> Direction? {
+            let input = command.input ?? ""
+            switch input {
+            case UIKeyCommand.inputUpArrow: return .up
+            case UIKeyCommand.inputDownArrow: return .down
+            case UIKeyCommand.inputLeftArrow: return .left
+            case UIKeyCommand.inputRightArrow: return .right
+            default: break
+            }
+
+            switch input.lowercased() {
+            case "w": return .up
+            case "a": return .left
+            case "s": return .down
+            case "d": return .right
+            default:
+                return nil
+            }
+        }
+    }
+}
+#endif
+
 #if os(macOS)
 import AppKit
 
