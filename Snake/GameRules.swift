@@ -58,8 +58,14 @@ enum GameRules {
 
         if ate {
             next.score += 1
-            next.food = randomFood(excluding: newSnake)
-            next.tickInterval = tickInterval(forScore: next.score)
+            if newSnake.count == gridWidth * gridHeight {
+                // No empty cells remain, so finish the game instead of trying to spawn food.
+                next.isGameOver = true
+                next.isRunning = false
+            } else {
+                next.food = randomFood(excluding: newSnake)
+                next.tickInterval = tickInterval(forScore: next.score)
+            }
         }
 
         return next
